@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ ! -d "~/.aws" ]
+if [ ! -d ~/.aws ]
 then
     mkdir ~/.aws
 fi
