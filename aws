@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ ! -d "~/.aws" ]
+then
+    mkdir ~/.aws
+fi
+
 if [ $# -eq 0 ]
 then
     docker run -it -v ~/.aws:/root/.aws cgswong/aws:latest aws --version
